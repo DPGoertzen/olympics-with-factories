@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="olympicApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Olympic Routes</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-route/angular-route.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <base href="/" />
+  </head>
+  <body>
+    <div class="button">
+      <a href="/archery"><button>Archery</button></a>
+      <a href="/boxing"><button>Boxing</button></a>
+      <a href="/pingpong"><button>Table-Tennis</button></a>
+      <a href="/triathlon"><button>Triathlon</button></a>
+      <a href="/weightlifting"><button>Weightlifting</button></a>
+    </div>
+
+    <div class="flex">
+      <div ng-view>
+
+      </div>
+    </div>
+
+  </body>
+</html>
